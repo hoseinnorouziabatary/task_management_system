@@ -46,13 +46,13 @@ if($action == 'delete_user'){
     if($save)
         echo $save;
 }
-if($action == 'save_project'){
-    $save = $crud->save_project();
+if($action == 'save_document'){
+    $save = $crud->save_document();
     if($save)
         echo $save;
 }
-if($action == 'delete_project'){
-    $save = $crud->delete_project();
+if($action == 'delete_document'){
+    $save = $crud->delete_document();
     if($save)
         echo $save;
 }
@@ -78,6 +78,11 @@ if($action == 'delete_progress'){
 }
 if($action == 'get_report'){
     $get = $crud->get_report();
+    if($get)
+        echo $get;
+}
+if($action == 'change_active_user'){
+    $get = $crud->change_active_user();
     if($get)
         echo $get;
 }
